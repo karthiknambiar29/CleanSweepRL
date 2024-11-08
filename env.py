@@ -8,8 +8,12 @@ class TetheredBoatsEnv(gym.Env):
     metadata = {'render.modes': ['human']}
 
     def __init__(self, grid_size=10, n_boats=2, tether_length=3, 
-                 time_penalty=-1, trash_reward=10, complete_reward=50):
+                 time_penalty=-1, trash_reward=10, complete_reward=50, incomplete_penalty=-50, step_per_episode=100, num_episode=1):
         super(TetheredBoatsEnv, self).__init__()
+
+        # RL parameters
+        self.step_per_episode = step_per_episode
+        self.num_episode = num_episode
         
         # Environment parameters
         self.grid_size = grid_size
@@ -20,6 +24,7 @@ class TetheredBoatsEnv(gym.Env):
         self.time_penalty = time_penalty
         self.trash_reward = trash_reward
         self.complete_reward = complete_reward
+        self.incomplete_penalty = incomplete_penalty
         
         # Grid values
         self.EMPTY = 0
@@ -40,6 +45,8 @@ class TetheredBoatsEnv(gym.Env):
         
         # Initialize state
         self.reset()
+
+        
     
     def _get_distance(self, pos1, pos2):
         """Calculate Euclidean distance between two positions"""
@@ -53,9 +60,19 @@ class TetheredBoatsEnv(gym.Env):
         x1, y1 = boat1_pos
         x2, y2 = boat2_pos
         
+
+        # Calculate distance between boats
+        distance = self._get_distance(boat1_pos, boat2_pos)
+        
+        # If distance allows for 3 points (i.e., there's room for a middle point)
+        if distance < self.tether_length:  # Minimum distance needed for 3 points
+            n_points = self.tether_length 
+        else:
+            n_points = self.tether_length +1
+
         # Get all points on line between boats
         points = []
-        n_points = self.tether_length
+        # n_points = self.tether_length + 1
         for i in range(n_points):
             t = i / (n_points - 1)
             x = int(round(x1 + t * (x2 - x1)))
@@ -63,27 +80,6 @@ class TetheredBoatsEnv(gym.Env):
             points.append((x, y))
         
         return points
-    
-    # def _get_tether_cells(self, boat1_pos, boat2_pos):
-    #     """Calculate cells occupied by tether between two boats using Manhattan distance"""
-    #     x1, y1 = boat1_pos
-    #     x2, y2 = boat2_pos
-        
-    #     # Get all points on line between boats using Manhattan distance
-    #     points = []
-        
-    #     # Calculate the number of steps in each direction
-    #     dx = abs(x2 - x1)
-    #     dy = abs(y2 - y1)
-    #     num_steps = max(dx, dy) + 1
-        
-    #     # Iterate over the number of steps and calculate the positions
-    #     for i in range(num_steps):
-    #         x = x1 + np.sign(x2 - x1) * i
-    #         y = y1 + np.sign(y2 - y1) * i
-    #         points.append((int(x), int(y)))
-        
-    #     return points
     
     def _is_valid_move(self, current_pos, new_pos, other_boat_pos):
         """Check if move is valid (within grid, one cell distance, and tether length)"""
@@ -144,6 +140,8 @@ class TetheredBoatsEnv(gym.Env):
     def step(self, action):
         """Execute one time step within the environment"""
         assert self.action_space.contains(action)
+
+        self.step_num += 1
         
         reward = self.time_penalty
         done = False
@@ -202,10 +200,16 @@ class TetheredBoatsEnv(gym.Env):
             reward += self.complete_reward
             done = True
         
+        # Give penalty if task is not complete at the end of the episode
+        if self.step_num == self.step_per_episode and len(self.trash_positions) != 0:
+            reward += self.incomplete_penalty
+
         return self.grid, reward, done, {}
     
     def reset(self):
         """Reset the state of the environment"""
+
+        self.step_num = 0
         self.grid = np.zeros((self.grid_size, self.grid_size), dtype=np.int32)
         
         # Initialize boat positions (start from left side)
@@ -215,7 +219,7 @@ class TetheredBoatsEnv(gym.Env):
         ]
         
         # Initialize random trash positions (on right half of grid)
-        n_trash = 50#self.grid_size  # Number of trash pieces
+        n_trash = self.grid_size  # Number of trash pieces
         self.trash_positions = []
         while len(self.trash_positions) < n_trash:
             x = np.random.randint(0, self.grid_size)
@@ -224,8 +228,6 @@ class TetheredBoatsEnv(gym.Env):
             if pos not in self.trash_positions:
                 self.trash_positions.append(pos)
                 self.grid[pos] = self.TRASH
-
-        # self.grid[:, :] = self.TRASH
         
         # Place boats and tether
         for boat_pos in self.boat_positions:
@@ -276,22 +278,17 @@ class TetheredBoatsEnv(gym.Env):
 
             tether_positions = self._get_tether_cells(self.boat_positions[0], self.boat_positions[1])
             tether_positions = [(boat1_y, boat1_x)] + tether_positions + [(boat2_y, boat2_x)]
-            print(tether_positions, self.boat_positions)
+
+            for (pos_x, pos_y) in tether_positions:
+                ax.plot(pos_y, pos_x, '*', color='green', markersize=15, markerfacecolor='green')
+
             for i in range(0, len(tether_positions) - 1):
                 ax.plot([tether_positions[i][1], tether_positions[i+1][1]], [tether_positions[i][0], tether_positions[i+1][0]], 'g-', linewidth=2, alpha=0.6)
 
-            
 
-        # Draw tether between boats
-
-
-        # if len(self.boat_positions) >= 2:
-        #     boat1_y, boat1_x = self.boat_positions[0]
-        #     boat2_y, boat2_x = self.boat_positions[1]
-        #     ax.plot([boat1_x, boat2_x], [boat1_y, boat2_y], 'g-', linewidth=2, alpha=0.6)
         
         # Set title and display limits
-        ax.set_title('Tethered Boats Environment')
+        ax.set_title(f'Tethered Boats Environment \n Step = {self.step_num}')
         ax.set_xlim(-0.5, self.grid_size - 0.5)
         ax.set_ylim(self.grid_size - 0.5, -0.5)  # Invert y-axis to match grid coordinates
         
@@ -305,14 +302,19 @@ if __name__ == "__main__":
     env = TetheredBoatsEnv()
     
     # Reset environment
-    obs = env.reset()
-    env.render()
+    # obs = env.reset()
+    # env.render()
     
-    # Run a few random steps
-    for _ in range(100):
-        action = env.action_space.sample()  # Random action
-        obs, reward, done, info = env.step(action)
+
+    for _ in range(env.num_episode):
+        obs = env.reset()
         env.render()
-        
-        if done:
-            obs = env.reset()
+    # Run a few random steps
+        for _ in range(env.step_per_episode):
+            action = env.action_space.sample()  # Random action
+            obs, reward, done, info = env.step(action)
+            env.render()
+            
+            if done:
+                # obs = env.reset()
+                break
