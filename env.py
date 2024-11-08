@@ -2,6 +2,8 @@ import gym
 import numpy as np
 from gym import spaces
 import matplotlib.pyplot as plt
+import pygame
+import sys
 
 class TetheredBoatsEnv(gym.Env):
     """Custom Environment that follows gym interface"""
@@ -11,10 +13,22 @@ class TetheredBoatsEnv(gym.Env):
                  time_penalty=-1, trash_reward=10, complete_reward=50, incomplete_penalty=-50, step_per_episode=100, num_episode=1):
         super(TetheredBoatsEnv, self).__init__()
 
+        # Pygame specific settings
+        self.WINDOW_SIZE = 800  # pixels
+        self.HUD_HEIGHT = 100  # pixels for HUD
+        self.CELL_SIZE = self.WINDOW_SIZE // grid_size
+        self.screen = None
+        self.clock = None
+        self.font = None
+        
         # RL parameters
         self.step_per_episode = step_per_episode
         self.num_episode = num_episode
         
+        # Track cumulative reward
+        self.cumulative_reward = 0
+        self.current_episode = 1
+
         # Environment parameters
         self.grid_size = grid_size
         self.n_boats = n_boats
@@ -46,6 +60,12 @@ class TetheredBoatsEnv(gym.Env):
         # Initialize state
         self.reset()
 
+        
+    def _grid_to_pixel(self, grid_pos):
+        """Convert grid coordinates to pixel coordinates"""
+        x, y = grid_pos
+        return (y * self.CELL_SIZE + self.CELL_SIZE // 2, 
+                x * self.CELL_SIZE + self.CELL_SIZE // 2)
         
     
     def _get_distance(self, pos1, pos2):
@@ -204,18 +224,28 @@ class TetheredBoatsEnv(gym.Env):
         if self.step_num == self.step_per_episode and len(self.trash_positions) != 0:
             reward += self.incomplete_penalty
 
+        # Update cumulative reward
+        self.cumulative_reward += reward
+
         return self.grid, reward, done, {}
     
     def reset(self):
         """Reset the state of the environment"""
 
+        self.fig, self.ax = plt.subplots()
+        self.fig.set_size_inches(8, 8)
+
+        self.ax.clear()
+        
         self.step_num = 0
+        self.cumulative_reward = 0
         self.grid = np.zeros((self.grid_size, self.grid_size), dtype=np.int32)
+        
         
         # Initialize boat positions (start from left side)
         self.boat_positions = [
-            (0, self.grid_size // 3),
-            (0, 2 * self.grid_size // 3)
+            (0, 0),
+            (0, self.tether_length)
         ]
         
         # Initialize random trash positions (on right half of grid)
@@ -237,65 +267,96 @@ class TetheredBoatsEnv(gym.Env):
         
         return self.grid
     
+    def _render_hud(self):
+        """Render the HUD with game statistics"""
+        # HUD background
+        pygame.draw.rect(self.screen, (240, 240, 240), 
+                        (0, self.WINDOW_SIZE, self.WINDOW_SIZE, self.HUD_HEIGHT))
+        pygame.draw.line(self.screen, (200, 200, 200), 
+                        (0, self.WINDOW_SIZE), (self.WINDOW_SIZE, self.WINDOW_SIZE), 2)
+
+        # Prepare text elements
+        texts = [
+            f"Episode: {self.current_episode}/{self.num_episode}",
+            f"Step: {self.step_num}/{self.step_per_episode}",
+            f"Reward: {self.cumulative_reward:.1f}",
+            f"Trash Remaining: {len(self.trash_positions)}"
+        ]
+
+        # Render text elements
+        x_positions = [20, 200, 380, 560]  # Horizontal positions for each text element
+        for text, x_pos in zip(texts, x_positions):
+            text_surface = self.font.render(text, True, (0, 0, 0))
+            self.screen.blit(text_surface, 
+                        (x_pos, 30 ))
+                
     def render(self, mode='human'):
-        """Render the environment with clear visualization of boats, trash, and grid"""
-        # Clear current figure if it exists
-        plt.clf()
+        """Render the environment using Pygame"""
+        if self.screen is None:
+            pygame.init()
+            pygame.display.set_caption('Tethered Boats Environment')
+            self.screen = pygame.display.set_mode((self.WINDOW_SIZE, self.WINDOW_SIZE))
+            self.clock = pygame.time.Clock()
+            self.font = pygame.font.Font(None, 36)  # Initialize font
         
-        # Create figure and axis with specific size
-        fig = plt.gcf()
-        ax = plt.gca()
+        # Handle Pygame events
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
         
-        # # Set figure size if it hasn't been set
-        # if fig.get_size_inches().tolist() != [8, 8]:
-        fig.set_size_inches(8, 8)
+        # Fill background
+        self.screen.fill((255, 255, 255))  # White background
         
-        # Plot the base grid (white background)
-        ax.imshow(np.zeros_like(self.grid), cmap='binary', alpha=0.1)
+        # Draw grid lines
+        for i in range(self.grid_size + 1):
+            pos = i * self.CELL_SIZE
+            pygame.draw.line(self.screen, (200, 200, 200), (pos, 0), (pos, self.WINDOW_SIZE))
+            pygame.draw.line(self.screen, (200, 200, 200), (0, pos), (self.WINDOW_SIZE, pos))
         
-        # Add grid lines
-        ax.grid(True, which='major', color='black', linewidth=1)
-        ax.set_xticks(np.arange(-.5, self.grid_size, 1))
-        ax.set_yticks(np.arange(-.5, self.grid_size, 1))
-        
-        # Remove axis labels
-        ax.set_xticklabels([])
-        ax.set_yticklabels([])
-        
-        # Plot trash (red dots)
+        # Draw trash (red circles)
         for pos in self.trash_positions:
-            i, j = pos
-            ax.plot(j, i, 'ro', markersize=15, markerfacecolor='red')
+            pixel_pos = self._grid_to_pixel(pos)
+            pygame.draw.circle(self.screen, (255, 0, 0), pixel_pos, self.CELL_SIZE // 4)
         
-        # Plot boats (blue triangles) and tether (green line)
-        for boat_pos in self.boat_positions:
-            i, j = boat_pos
-            ax.plot(j, i, '^', color='blue', markersize=15, markerfacecolor='blue')
-        
+        # Draw tether (green line with points)
         if len(self.boat_positions) >= 2:
-            boat1_y, boat1_x = self.boat_positions[0]
-            boat2_y, boat2_x = self.boat_positions[1]
-
+            # Draw tether line and points
             tether_positions = self._get_tether_cells(self.boat_positions[0], self.boat_positions[1])
-            tether_positions = [(boat1_y, boat1_x)] + tether_positions + [(boat2_y, boat2_x)]
-
-            for (pos_x, pos_y) in tether_positions:
-                ax.plot(pos_y, pos_x, '*', color='green', markersize=15, markerfacecolor='green')
-
-            for i in range(0, len(tether_positions) - 1):
-                ax.plot([tether_positions[i][1], tether_positions[i+1][1]], [tether_positions[i][0], tether_positions[i+1][0]], 'g-', linewidth=2, alpha=0.6)
-
-
+            
+            # Convert all positions to pixel coordinates
+            pixel_positions = [self._grid_to_pixel(pos) for pos in tether_positions]
+            
+            # Draw tether lines
+            if len(pixel_positions) > 1:
+                pygame.draw.lines(self.screen, (0, 255, 0), False, pixel_positions, 3)
+            
+            # Draw tether points
+            for pos in pixel_positions:
+                pygame.draw.circle(self.screen, (0, 200, 0), pos, self.CELL_SIZE // 6)
         
-        # Set title and display limits
-        ax.set_title(f'Tethered Boats Environment \n Step = {self.step_num}')
-        ax.set_xlim(-0.5, self.grid_size - 0.5)
-        ax.set_ylim(self.grid_size - 0.5, -0.5)  # Invert y-axis to match grid coordinates
+        # Draw boats (blue triangles)
+        for boat_pos in self.boat_positions:
+            pixel_pos = self._grid_to_pixel(boat_pos)
+            
+            # Calculate triangle points
+            size = self.CELL_SIZE // 3
+            points = [
+                (pixel_pos[0], pixel_pos[1] - size),  # Top
+                (pixel_pos[0] - size, pixel_pos[1] + size),  # Bottom left
+                (pixel_pos[0] + size, pixel_pos[1] + size)   # Bottom right
+            ]
+            pygame.draw.polygon(self.screen, (0, 0, 255), points)
         
-        # Display the plot
-        plt.draw()
-        plt.pause(0.5)
+        self._render_hud()
 
+        # Update display
+        pygame.display.flip()
+        self.clock.tick(10)  # 2 FPS to match original 0.5s pause
+        
+    def close(self):
+        if self.screen is not None:
+            pygame.quit()
 # Example usage:
 if __name__ == "__main__":
     # Create environment
@@ -305,16 +366,19 @@ if __name__ == "__main__":
     # obs = env.reset()
     # env.render()
     
-
-    for _ in range(env.num_episode):
-        obs = env.reset()
-        env.render()
-    # Run a few random steps
-        for _ in range(env.step_per_episode):
-            action = env.action_space.sample()  # Random action
-            obs, reward, done, info = env.step(action)
+    try:
+        for episode in range(env.num_episode):
+            env.current_episode = episode + 1
+            obs = env.reset()
             env.render()
-            
-            if done:
-                # obs = env.reset()
-                break
+        # Run a few random steps
+            for _ in range(env.step_per_episode):
+                action = env.action_space.sample()  # Random action
+                obs, reward, done, info = env.step(action)
+                env.render()
+                
+                if done:
+                    # obs = env.reset()
+                    break
+    finally:
+        env.close()
