@@ -33,3 +33,13 @@ Episode 14/1000 - Reward: -15.00, Loss: 0.3529
 trash left:  1
 Episode 15/1000 - Reward: 5.00, Loss: 0.3017
 Evaluation reward: 71.30
+trash left:  1
+Episode 16/1000 - Reward: 5.00, Loss: 0.3332
+/home/protomate/CleanSweepRL/env2.py:317: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  self.fig, self.ax = plt.subplots()
+trash left:  1
+Episode 17/1000 - Reward: 5.00, Loss: 0.7065
+trash left:  2
+Episode 18/1000 - Reward: -15.00, Loss: 0.7354
+trash left:  2
+Episode 19/1000 - Reward: -15.00, Loss: 0.4967
