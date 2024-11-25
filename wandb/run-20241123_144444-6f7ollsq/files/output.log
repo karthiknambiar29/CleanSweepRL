@@ -1,0 +1,23 @@
+Training:  68%|██████████▏    | 681/1000 [09:56<04:39,  1.14it/s, ep_reward=-100.0, steps=200, epsilon=0.010]
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/main.py", line 244, in <module>
+    def save(self, path):
+    ^^^^^^
+  File "/home/protomate/CleanSweepRL/main.py", line 238, in main
+    # Learn if memory is full
+  File "/home/protomate/CleanSweepRL/main.py", line 107, in train
+    self.gamma = gamma
+               ^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 155, in train_step
+    current_q_values = self.policy_net(state_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 40, in forward
+    def forward(self, x):
+
+KeyboardInterrupt

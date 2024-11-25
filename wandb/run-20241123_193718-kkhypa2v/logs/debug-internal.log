@@ -1,0 +1,16 @@
+{"time":"2024-11-23T19:37:18.254491146+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T19:37:18.254511856+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_193718-kkhypa2v/logs/debug-core.log"}
+{"time":"2024-11-23T19:37:18.359779141+05:30","level":"INFO","msg":"created new stream","id":"kkhypa2v"}
+{"time":"2024-11-23T19:37:18.35985924+05:30","level":"INFO","msg":"stream: started","id":"kkhypa2v"}
+{"time":"2024-11-23T19:37:18.359991437+05:30","level":"INFO","msg":"sender: started","stream_id":"kkhypa2v"}
+{"time":"2024-11-23T19:37:18.360054182+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"kkhypa2v"}}
+{"time":"2024-11-23T19:37:18.359983085+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"kkhypa2v"}}
+{"time":"2024-11-23T19:37:18.821105629+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T19:37:30.458810345+05:30","level":"INFO","msg":"stream: closing","id":"kkhypa2v"}
+{"time":"2024-11-23T19:37:30.458868638+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T19:37:30.46007878+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-23T19:37:31.800555532+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-23T19:37:32.171065818+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"kkhypa2v"}}
+{"time":"2024-11-23T19:37:32.171146937+05:30","level":"INFO","msg":"sender: closed","stream_id":"kkhypa2v"}
+{"time":"2024-11-23T19:37:32.171128227+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"kkhypa2v"}}
+{"time":"2024-11-23T19:37:32.171376571+05:30","level":"INFO","msg":"stream: closed","id":"kkhypa2v"}

@@ -1,0 +1,185 @@
+_current_progress_remaining:
+    value: 1
+_custom_logger:
+    value: "False"
+_episode_num:
+    value: 0
+_last_episode_starts:
+    value: '[ True]'
+_last_obs:
+    value: |-
+        [[[1.  1.  1.  1.  0.  0.  0.  0.  0.  0. ]
+          [0.  0.5 0.  0.  0.  0.  0.5 0.5 0.5 0. ]
+          [0.  0.  0.  0.  0.  0.  0.  0.5 0.  0. ]
+          [0.  0.  0.  0.  0.  0.  0.5 0.  0.  0. ]
+          [0.5 0.  0.  0.  0.  0.  0.5 0.  0.  0.5]
+          [0.  0.  0.5 0.  0.  0.  0.  0.  0.5 0. ]
+          [0.  0.  0.  0.5 0.5 0.  0.  0.  0.  0. ]
+          [0.  0.5 0.  0.5 0.  0.  0.5 0.  0.  0. ]
+          [0.  0.  0.  0.  0.  0.5 0.5 0.  0.  0. ]
+          [0.  0.  0.  0.  0.  0.  0.  0.5 0.  0. ]]]
+_last_original_obs:
+    value: None
+_logger:
+    value: <stable_baselines3.common.logger.Logger object at 0x7b7d01a6e2a0>
+_n_updates:
+    value: 0
+_num_timesteps_at_start:
+    value: 0
+_stats_window_size:
+    value: 100
+_total_timesteps:
+    value: 500000
+_vec_normalize_env:
+    value: None
+_wandb:
+    value:
+        cli_version: 0.18.5
+        m: []
+        python_version: 3.12.4
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 22
+                - 23
+                - 55
+            "4": 3.12.4
+            "5": 0.18.5
+            "8":
+                - 5
+            "12": 0.18.5
+            "13": linux-x86_64
+action_noise:
+    value: None
+action_space:
+    value: Discrete(81)
+algo:
+    value: PPO
+batch_size:
+    value: 256
+clip_range:
+    value: <function get_schedule_fn.<locals>.<lambda> at 0x7b7cfcda89a0>
+clip_range_vf:
+    value: None
+device:
+    value: cuda
+ent_coef:
+    value: 0.1
+env:
+    value: <stable_baselines3.common.vec_env.dummy_vec_env.DummyVecEnv object at 0x7b7d01a6dac0>
+ep_info_buffer:
+    value: deque([], maxlen=100)
+ep_success_buffer:
+    value: deque([], maxlen=100)
+gae_lambda:
+    value: 0.95
+gamma:
+    value: 0.99
+learning_rate:
+    value: 0.0003
+lr_schedule:
+    value: <function get_schedule_fn.<locals>.<lambda> at 0x7b7d01a54cc0>
+max_grad_norm:
+    value: 0.5
+n_envs:
+    value: 1
+n_epochs:
+    value: 10
+n_steps:
+    value: 1024
+normalize_advantage:
+    value: "True"
+num_timesteps:
+    value: 0
+observation_space:
+    value: Box(0.0, 1.0, (10, 10), float32)
+policy:
+    value: |-
+        ActorCriticCnnPolicy(
+          (features_extractor): CustomCNN(
+            (cnn): Sequential(
+              (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+              (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (3): ReLU()
+              (4): Flatten(start_dim=1, end_dim=-1)
+            )
+            (linear): Sequential(
+              (0): Linear(in_features=6400, out_features=256, bias=True)
+              (1): ReLU()
+            )
+          )
+          (pi_features_extractor): CustomCNN(
+            (cnn): Sequential(
+              (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+              (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (3): ReLU()
+              (4): Flatten(start_dim=1, end_dim=-1)
+            )
+            (linear): Sequential(
+              (0): Linear(in_features=6400, out_features=256, bias=True)
+              (1): ReLU()
+            )
+          )
+          (vf_features_extractor): CustomCNN(
+            (cnn): Sequential(
+              (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (1): ReLU()
+              (2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              (3): ReLU()
+              (4): Flatten(start_dim=1, end_dim=-1)
+            )
+            (linear): Sequential(
+              (0): Linear(in_features=6400, out_features=256, bias=True)
+              (1): ReLU()
+            )
+          )
+          (mlp_extractor): MlpExtractor(
+            (policy_net): Sequential(
+              (0): Linear(in_features=256, out_features=64, bias=True)
+              (1): Tanh()
+              (2): Linear(in_features=64, out_features=64, bias=True)
+              (3): Tanh()
+            )
+            (value_net): Sequential(
+              (0): Linear(in_features=256, out_features=64, bias=True)
+              (1): Tanh()
+              (2): Linear(in_features=64, out_features=64, bias=True)
+              (3): Tanh()
+            )
+          )
+          (action_net): Linear(in_features=64, out_features=81, bias=True)
+          (value_net): Linear(in_features=64, out_features=1, bias=True)
+        )
+policy_class:
+    value: <class 'stable_baselines3.common.policies.ActorCriticCnnPolicy'>
+policy_kwargs:
+    value: '{''features_extractor_class'': <class ''__main__.CustomCNN''>, ''features_extractor_kwargs'': {''features_dim'': 256}}'
+rollout_buffer:
+    value: <stable_baselines3.common.buffers.RolloutBuffer object at 0x7b7d01b7b380>
+rollout_buffer_class:
+    value: <class 'stable_baselines3.common.buffers.RolloutBuffer'>
+rollout_buffer_kwargs:
+    value: '{}'
+sde_sample_freq:
+    value: -1
+seed:
+    value: None
+start_time:
+    value: 1732368576428349488
+target_kl:
+    value: None
+tensorboard_log:
+    value: None
+use_sde:
+    value: "False"
+verbose:
+    value: 1
+vf_coef:
+    value: 0.5

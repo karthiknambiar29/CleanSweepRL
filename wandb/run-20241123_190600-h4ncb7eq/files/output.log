@@ -1,0 +1,32 @@
+Using cuda device
+/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent3.py", line 157, in <module>
+    agent.train(total_timesteps=5000000)
+  File "/home/protomate/CleanSweepRL/agent3.py", line 128, in train
+    self.model.learn(total_timesteps=total_timesteps, callback=callbacks)
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/ppo/ppo.py", line 311, in learn
+    return super().learn(
+           ^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 323, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 224, in collect_rollouts
+    if not callback.on_step():
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/callbacks.py", line 114, in on_step
+    return self._on_step()
+           ^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/callbacks.py", line 223, in _on_step
+    continue_training = callback.on_step() and continue_training
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/callbacks.py", line 114, in on_step
+    return self._on_step()
+           ^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent3.py", line 31, in _on_step
+    loss = self.model.logger.get_log("train/loss")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Logger' object has no attribute 'get_log'

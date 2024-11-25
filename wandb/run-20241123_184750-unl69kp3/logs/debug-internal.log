@@ -1,0 +1,16 @@
+{"time":"2024-11-23T18:47:50.087256613+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T18:47:50.087299242+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_184750-unl69kp3/logs/debug-core.log"}
+{"time":"2024-11-23T18:47:50.19193013+05:30","level":"INFO","msg":"created new stream","id":"unl69kp3"}
+{"time":"2024-11-23T18:47:50.191958683+05:30","level":"INFO","msg":"stream: started","id":"unl69kp3"}
+{"time":"2024-11-23T18:47:50.192075475+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"unl69kp3"}}
+{"time":"2024-11-23T18:47:50.192151212+05:30","level":"INFO","msg":"sender: started","stream_id":"unl69kp3"}
+{"time":"2024-11-23T18:47:50.192180969+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"unl69kp3"}}
+{"time":"2024-11-23T18:47:50.863424084+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T18:54:22.90624882+05:30","level":"INFO","msg":"stream: closing","id":"unl69kp3"}
+{"time":"2024-11-23T18:54:22.906263185+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T18:54:22.90659222+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-23T18:54:27.697069162+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-23T18:54:28.068856238+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"unl69kp3"}}
+{"time":"2024-11-23T18:54:28.06896734+05:30","level":"INFO","msg":"sender: closed","stream_id":"unl69kp3"}
+{"time":"2024-11-23T18:54:28.068940043+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"unl69kp3"}}
+{"time":"2024-11-23T18:54:28.069171133+05:30","level":"INFO","msg":"stream: closed","id":"unl69kp3"}

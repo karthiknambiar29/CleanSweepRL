@@ -1,0 +1,210 @@
+Using cuda device
+/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+5 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+16 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+15 trash left
+Initial observation shape: (10, 10)
+4 trash left
+Initial observation shape: (10, 10)
+6 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+15 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+6 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+6 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+4 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+12 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+14 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+2 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+16 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+12 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+2 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+4 trash left
+Initial observation shape: (10, 10)
+5 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+3 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+4 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+6 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+11 trash left
+Initial observation shape: (10, 10)
+5 trash left
+Initial observation shape: (10, 10)
+6 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+9 trash left
+Initial observation shape: (10, 10)
+10 trash left
+Initial observation shape: (10, 10)
+6 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+8 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+15 trash left
+Initial observation shape: (10, 10)
+7 trash left
+Initial observation shape: (10, 10)
+5 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Initial observation shape: (10, 10)
+13 trash left
+Average trash left: 9.23

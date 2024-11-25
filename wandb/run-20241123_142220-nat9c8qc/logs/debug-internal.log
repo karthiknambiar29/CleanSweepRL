@@ -1,0 +1,17 @@
+{"time":"2024-11-23T14:22:20.172148479+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T14:22:20.172190367+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_142220-nat9c8qc/logs/debug-core.log"}
+{"time":"2024-11-23T14:22:20.277740145+05:30","level":"INFO","msg":"created new stream","id":"nat9c8qc"}
+{"time":"2024-11-23T14:22:20.277821047+05:30","level":"INFO","msg":"stream: started","id":"nat9c8qc"}
+{"time":"2024-11-23T14:22:20.278009267+05:30","level":"INFO","msg":"sender: started","stream_id":"nat9c8qc"}
+{"time":"2024-11-23T14:22:20.277928146+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"nat9c8qc"}}
+{"time":"2024-11-23T14:22:20.278109682+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"nat9c8qc"}}
+{"time":"2024-11-23T14:22:20.76282439+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T14:26:35.209797248+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T14:26:35.210106433+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-23T14:26:36.210719113+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.36868904},{"desc":"uploading wandb-summary.json","runtime_seconds":0.321301299,"progress":"175B/175B"},{"desc":"uploading config.yaml","runtime_seconds":0.021682311,"progress":"976B/976B"},{"desc":"uploading output.log","runtime_seconds":0.021659496,"progress":"472B/472B"}],"total_operations":4}}
+{"time":"2024-11-23T14:26:40.421850761+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-23T14:26:41.780527078+05:30","level":"INFO","msg":"stream: closing","id":"nat9c8qc"}
+{"time":"2024-11-23T14:26:41.780536797+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"nat9c8qc"}}
+{"time":"2024-11-23T14:26:41.780548103+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"nat9c8qc"}}
+{"time":"2024-11-23T14:26:41.780588458+05:30","level":"INFO","msg":"sender: closed","stream_id":"nat9c8qc"}
+{"time":"2024-11-23T14:26:41.780605147+05:30","level":"INFO","msg":"stream: closed","id":"nat9c8qc"}

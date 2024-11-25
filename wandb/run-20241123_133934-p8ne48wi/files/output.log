@@ -1,0 +1,68 @@
+/home/protomate/CleanSweepRL/agent.py:187: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  states = torch.FloatTensor(self.states).to(self.device)
+Episode 10, Average Reward (last 10): -1954.00
+Episode 20, Average Reward (last 10): -1953.00
+Episode 30, Average Reward (last 10): -1949.00
+Episode 40, Average Reward (last 10): -1936.00
+Episode 50, Average Reward (last 10): -1947.00
+Episode 60, Average Reward (last 10): -1961.00
+Episode 70, Average Reward (last 10): -1967.00
+Episode 80, Average Reward (last 10): -1980.00
+Episode 90, Average Reward (last 10): -1965.00
+Episode 100, Average Reward (last 10): -1981.00
+Episode 110, Average Reward (last 10): -1965.00
+Episode 120, Average Reward (last 10): -1963.00
+Episode 130, Average Reward (last 10): -1964.00
+Episode 140, Average Reward (last 10): -1942.00
+Episode 150, Average Reward (last 10): -1961.00
+Episode 160, Average Reward (last 10): -1964.00
+Episode 170, Average Reward (last 10): -1943.00
+Episode 180, Average Reward (last 10): -1955.00
+Episode 190, Average Reward (last 10): -1949.00
+Episode 200, Average Reward (last 10): -1935.00
+Episode 210, Average Reward (last 10): -1939.00
+Episode 220, Average Reward (last 10): -1929.00
+Episode 230, Average Reward (last 10): -1961.00
+Episode 240, Average Reward (last 10): -1930.00
+Episode 250, Average Reward (last 10): -1964.00
+Episode 260, Average Reward (last 10): -1959.00
+Episode 270, Average Reward (last 10): -1975.00
+Episode 280, Average Reward (last 10): -1965.00
+Episode 290, Average Reward (last 10): -1941.00
+Episode 300, Average Reward (last 10): -1950.00
+Episode 310, Average Reward (last 10): -1953.00
+Episode 320, Average Reward (last 10): -1966.00
+Episode 330, Average Reward (last 10): -1961.00
+Episode 340, Average Reward (last 10): -1951.00
+Episode 350, Average Reward (last 10): -1938.00
+Episode 360, Average Reward (last 10): -1963.00
+Episode 370, Average Reward (last 10): -1977.00
+Episode 380, Average Reward (last 10): -1973.00
+Episode 390, Average Reward (last 10): -1993.00
+Episode 400, Average Reward (last 10): -1952.00
+Episode 410, Average Reward (last 10): -1954.00
+Episode 420, Average Reward (last 10): -1938.00
+Episode 430, Average Reward (last 10): -1942.00
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/train.py", line 16, in <module>
+    episode_rewards = train_agent(env, agent, n_episodes=1000, max_steps=200)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 274, in train_agent
+    action = agent.get_action(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 148, in get_action
+    action_probs_boat1, action_probs_boat2, state_value = self.network(
+                                                          ^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 40, in forward
+    x = F.relu(self.conv2(x))
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/functional.py", line 1500, in relu
+    result = torch.relu(input)
+             ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

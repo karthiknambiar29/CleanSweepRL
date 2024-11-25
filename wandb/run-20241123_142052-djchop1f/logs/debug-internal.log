@@ -1,0 +1,11 @@
+{"time":"2024-11-23T14:20:52.238304315+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T14:20:52.238335645+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_142052-djchop1f/logs/debug-core.log"}
+{"time":"2024-11-23T14:20:52.343392324+05:30","level":"INFO","msg":"created new stream","id":"djchop1f"}
+{"time":"2024-11-23T14:20:52.343452705+05:30","level":"INFO","msg":"stream: started","id":"djchop1f"}
+{"time":"2024-11-23T14:20:52.343695065+05:30","level":"INFO","msg":"sender: started","stream_id":"djchop1f"}
+{"time":"2024-11-23T14:20:52.343586743+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"djchop1f"}}
+{"time":"2024-11-23T14:20:52.343849756+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"djchop1f"}}
+{"time":"2024-11-23T14:20:52.859856048+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T14:22:10.49634204+05:30","level":"INFO","msg":"stream: closing","id":"djchop1f"}
+{"time":"2024-11-23T14:22:10.496395741+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T14:22:10.497433955+05:30","level":"INFO","msg":"Stopped system monitor"}

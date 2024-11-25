@@ -1,0 +1,212 @@
+/home/protomate/CleanSweepRL/agent.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  "tether_length": torch.FloatTensor([state_dict["tether_length"]])
+Episode 1/1000 - Reward: -110.00, Loss: 0.0000
+Episode 2/1000 - Reward: -70.00, Loss: 1.0697
+Episode 3/1000 - Reward: -80.00, Loss: 0.9807
+Episode 4/1000 - Reward: -90.00, Loss: 0.7926
+Episode 5/1000 - Reward: -50.00, Loss: 0.8149
+Evaluation reward: -110.00
+Episode 6/1000 - Reward: -110.00, Loss: 0.9034
+Episode 7/1000 - Reward: -130.00, Loss: 0.7184
+Episode 8/1000 - Reward: -120.00, Loss: 0.6752
+Episode 9/1000 - Reward: -80.00, Loss: 0.6955
+Episode 10/1000 - Reward: -130.00, Loss: 0.8033
+Evaluation reward: -150.00
+Episode 11/1000 - Reward: -80.00, Loss: 1.2437
+Episode 12/1000 - Reward: -110.00, Loss: 1.0471
+Episode 13/1000 - Reward: -80.00, Loss: 0.9446
+Episode 14/1000 - Reward: -90.00, Loss: 0.9068
+Episode 15/1000 - Reward: -110.00, Loss: 0.8515
+Evaluation reward: -80.00
+Episode 16/1000 - Reward: -80.00, Loss: 0.8560
+/home/protomate/CleanSweepRL/env2.py:317: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  self.fig, self.ax = plt.subplots()
+Episode 17/1000 - Reward: -90.00, Loss: 0.9164
+Episode 18/1000 - Reward: -70.00, Loss: 0.7968
+Episode 19/1000 - Reward: -80.00, Loss: 0.8353
+Episode 20/1000 - Reward: -50.00, Loss: 0.8612
+Evaluation reward: -110.00
+Episode 21/1000 - Reward: -80.00, Loss: 1.3468
+Episode 22/1000 - Reward: -80.00, Loss: 1.1302
+Episode 23/1000 - Reward: -110.00, Loss: 1.2068
+Episode 24/1000 - Reward: -80.00, Loss: 1.2171
+Episode 25/1000 - Reward: -140.00, Loss: 1.1531
+Evaluation reward: -80.00
+Episode 26/1000 - Reward: -90.00, Loss: 1.1338
+Episode 27/1000 - Reward: -130.00, Loss: 1.0810
+Episode 28/1000 - Reward: -60.00, Loss: 1.1645
+Episode 29/1000 - Reward: -90.00, Loss: 1.1988
+Episode 30/1000 - Reward: -90.00, Loss: 1.3194
+Evaluation reward: -110.00
+Episode 31/1000 - Reward: -80.00, Loss: 2.0158
+Episode 32/1000 - Reward: -70.00, Loss: 1.6109
+Episode 33/1000 - Reward: -80.00, Loss: 1.5444
+Episode 34/1000 - Reward: -80.00, Loss: 1.4403
+Episode 35/1000 - Reward: -100.00, Loss: 1.3858
+Evaluation reward: -50.00
+Episode 36/1000 - Reward: -110.00, Loss: 1.3260
+Episode 37/1000 - Reward: -30.00, Loss: 1.4019
+Episode 38/1000 - Reward: -80.00, Loss: 1.6210
+Episode 39/1000 - Reward: -60.00, Loss: 1.5243
+Episode 40/1000 - Reward: -110.00, Loss: 1.5091
+Evaluation reward: -70.00
+Episode 41/1000 - Reward: -110.00, Loss: 2.4921
+Episode 42/1000 - Reward: -70.00, Loss: 1.9083
+Episode 43/1000 - Reward: -100.00, Loss: 1.7552
+Episode 44/1000 - Reward: 10.00, Loss: 1.7533
+Episode 45/1000 - Reward: -110.00, Loss: 1.7891
+Evaluation reward: -60.00
+Episode 46/1000 - Reward: -50.00, Loss: 1.7347
+Episode 47/1000 - Reward: -50.00, Loss: 1.7383
+Episode 48/1000 - Reward: -40.00, Loss: 1.8216
+Episode 49/1000 - Reward: -40.00, Loss: 1.7901
+Episode 50/1000 - Reward: -90.00, Loss: 1.8917
+Evaluation reward: -50.00
+Episode 51/1000 - Reward: -100.00, Loss: 3.0529
+Episode 52/1000 - Reward: -80.00, Loss: 2.4052
+Episode 53/1000 - Reward: -50.00, Loss: 2.2378
+Episode 54/1000 - Reward: -90.00, Loss: 2.1140
+Episode 55/1000 - Reward: -60.00, Loss: 2.1114
+Evaluation reward: -60.00
+Episode 56/1000 - Reward: 10.00, Loss: 2.1321
+Episode 57/1000 - Reward: -80.00, Loss: 2.0600
+Episode 58/1000 - Reward: -100.00, Loss: 2.1905
+Episode 59/1000 - Reward: -100.00, Loss: 1.9295
+Episode 60/1000 - Reward: -40.00, Loss: 2.0631
+Evaluation reward: -120.00
+Episode 61/1000 - Reward: -100.00, Loss: 3.4524
+Episode 62/1000 - Reward: -50.00, Loss: 2.6162
+Episode 63/1000 - Reward: -130.00, Loss: 2.3641
+Episode 64/1000 - Reward: -60.00, Loss: 2.2276
+Episode 65/1000 - Reward: -90.00, Loss: 2.2082
+Evaluation reward: -50.00
+Episode 66/1000 - Reward: -70.00, Loss: 2.2152
+Episode 67/1000 - Reward: -60.00, Loss: 2.0958
+Episode 68/1000 - Reward: -50.00, Loss: 1.9909
+Episode 69/1000 - Reward: -70.00, Loss: 2.1743
+Episode 70/1000 - Reward: -80.00, Loss: 2.1087
+Evaluation reward: -50.00
+Episode 71/1000 - Reward: -90.00, Loss: 3.5319
+Episode 72/1000 - Reward: -40.00, Loss: 2.7843
+Episode 73/1000 - Reward: -110.00, Loss: 2.4430
+Episode 74/1000 - Reward: -40.00, Loss: 2.3534
+Episode 75/1000 - Reward: -110.00, Loss: 2.3670
+Evaluation reward: -90.00
+Episode 76/1000 - Reward: -80.00, Loss: 2.2259
+Episode 77/1000 - Reward: -100.00, Loss: 2.3645
+Episode 78/1000 - Reward: -70.00, Loss: 2.2476
+Episode 79/1000 - Reward: -100.00, Loss: 2.1157
+Episode 80/1000 - Reward: -80.00, Loss: 2.0045
+Evaluation reward: -90.00
+Episode 81/1000 - Reward: -50.00, Loss: 3.5140
+Episode 82/1000 - Reward: -60.00, Loss: 2.6013
+Episode 83/1000 - Reward: -90.00, Loss: 2.7195
+Episode 84/1000 - Reward: -100.00, Loss: 2.3791
+Episode 85/1000 - Reward: -80.00, Loss: 2.4725
+Evaluation reward: -110.00
+Episode 86/1000 - Reward: -80.00, Loss: 2.2883
+Episode 87/1000 - Reward: -80.00, Loss: 2.4011
+Episode 88/1000 - Reward: -10.00, Loss: 2.3042
+Episode 89/1000 - Reward: -110.00, Loss: 2.3664
+Episode 90/1000 - Reward: -90.00, Loss: 2.4009
+Evaluation reward: -150.00
+Episode 91/1000 - Reward: -60.00, Loss: 3.6589
+Episode 92/1000 - Reward: -80.00, Loss: 2.5233
+Episode 93/1000 - Reward: -90.00, Loss: 2.7523
+Episode 94/1000 - Reward: -60.00, Loss: 2.4086
+Episode 95/1000 - Reward: -100.00, Loss: 2.2712
+Evaluation reward: -120.00
+Episode 96/1000 - Reward: -50.00, Loss: 2.3736
+Episode 97/1000 - Reward: -50.00, Loss: 2.1708
+Episode 98/1000 - Reward: -100.00, Loss: 2.1517
+Episode 99/1000 - Reward: -90.00, Loss: 2.3056
+Episode 100/1000 - Reward: -50.00, Loss: 2.3068
+Evaluation reward: -110.00
+Episode 101/1000 - Reward: -90.00, Loss: 3.4874
+Episode 102/1000 - Reward: -80.00, Loss: 2.7875
+Episode 103/1000 - Reward: -10.00, Loss: 2.7547
+Episode 104/1000 - Reward: -60.00, Loss: 2.5626
+Episode 105/1000 - Reward: -60.00, Loss: 2.3702
+Evaluation reward: -80.00
+Episode 106/1000 - Reward: -30.00, Loss: 2.4680
+Episode 107/1000 - Reward: -130.00, Loss: 2.2794
+Episode 108/1000 - Reward: -90.00, Loss: 2.4410
+Episode 109/1000 - Reward: -90.00, Loss: 2.3882
+Episode 110/1000 - Reward: -40.00, Loss: 2.1791
+Evaluation reward: -40.00
+Episode 111/1000 - Reward: -80.00, Loss: 3.5748
+Episode 112/1000 - Reward: -80.00, Loss: 2.5961
+Episode 113/1000 - Reward: -90.00, Loss: 2.5547
+Episode 114/1000 - Reward: -90.00, Loss: 2.4732
+Episode 115/1000 - Reward: -50.00, Loss: 2.4835
+Evaluation reward: -80.00
+Episode 116/1000 - Reward: -110.00, Loss: 2.1818
+Episode 117/1000 - Reward: -70.00, Loss: 2.3170
+Episode 118/1000 - Reward: 0.00, Loss: 2.3452
+Episode 119/1000 - Reward: -120.00, Loss: 2.2177
+Episode 120/1000 - Reward: -80.00, Loss: 1.9564
+Evaluation reward: -140.00
+Episode 121/1000 - Reward: -40.00, Loss: 3.3373
+Episode 122/1000 - Reward: -110.00, Loss: 2.6808
+Episode 123/1000 - Reward: -90.00, Loss: 2.5852
+Episode 124/1000 - Reward: -60.00, Loss: 2.5823
+Episode 125/1000 - Reward: -140.00, Loss: 2.3369
+Evaluation reward: -80.00
+Episode 126/1000 - Reward: -20.00, Loss: 2.3977
+Episode 127/1000 - Reward: -60.00, Loss: 2.4879
+Episode 128/1000 - Reward: -40.00, Loss: 2.2603
+Episode 129/1000 - Reward: -100.00, Loss: 2.2146
+Episode 130/1000 - Reward: -70.00, Loss: 2.3082
+Evaluation reward: -60.00
+Episode 131/1000 - Reward: -50.00, Loss: 3.4108
+Episode 132/1000 - Reward: -80.00, Loss: 2.7375
+Episode 133/1000 - Reward: -90.00, Loss: 2.4551
+Episode 134/1000 - Reward: -70.00, Loss: 2.5240
+Episode 135/1000 - Reward: -70.00, Loss: 2.3079
+Evaluation reward: -90.00
+Episode 136/1000 - Reward: -80.00, Loss: 2.5335
+Episode 137/1000 - Reward: -80.00, Loss: 2.3496
+Episode 138/1000 - Reward: -90.00, Loss: 2.3430
+Episode 139/1000 - Reward: -80.00, Loss: 2.2346
+Episode 140/1000 - Reward: -70.00, Loss: 2.1907
+Evaluation reward: -100.00
+Episode 141/1000 - Reward: -80.00, Loss: 3.4733
+Episode 142/1000 - Reward: -110.00, Loss: 2.7955
+Episode 143/1000 - Reward: -110.00, Loss: 2.5835
+Episode 144/1000 - Reward: -70.00, Loss: 2.5144
+Episode 145/1000 - Reward: -80.00, Loss: 2.4983
+Evaluation reward: -50.00
+Episode 146/1000 - Reward: -120.00, Loss: 2.2398
+Episode 147/1000 - Reward: -80.00, Loss: 2.4414
+Episode 148/1000 - Reward: -80.00, Loss: 2.3547
+Episode 149/1000 - Reward: -100.00, Loss: 2.2945
+Episode 150/1000 - Reward: -60.00, Loss: 2.2478
+Evaluation reward: -100.00
+Episode 151/1000 - Reward: -80.00, Loss: 3.6108
+Episode 152/1000 - Reward: -140.00, Loss: 2.6760
+Episode 153/1000 - Reward: -90.00, Loss: 2.6469
+Episode 154/1000 - Reward: -90.00, Loss: 2.5453
+Episode 155/1000 - Reward: -10.00, Loss: 2.4972
+Evaluation reward: -110.00
+Episode 156/1000 - Reward: -90.00, Loss: 2.3819
+Episode 157/1000 - Reward: -130.00, Loss: 2.4008
+Episode 158/1000 - Reward: -60.00, Loss: 2.4201
+Episode 159/1000 - Reward: -60.00, Loss: 2.2295
+Episode 160/1000 - Reward: -110.00, Loss: 2.2246
+Evaluation reward: -110.00
+Episode 161/1000 - Reward: -110.00, Loss: 3.3341
+Episode 162/1000 - Reward: -90.00, Loss: 2.8148
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent.py", line 382, in <module>
+    reward, loss = agent.train_episode(env)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 293, in train_episode
+    loss = self.optimize_model()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 206, in optimize_model
+    self._to_tensor(s)["active_boat"]
+    ^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 141, in _to_tensor
+    .to(self.device),
+     ^^^^^^^^^^^^^^^
+KeyboardInterrupt

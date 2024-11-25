@@ -1,0 +1,49 @@
+trash left:  0
+Episode 1/1000 - Reward: 127.20, Loss: 0.0000
+trash left:  0
+Episode 2/1000 - Reward: 125.70, Loss: 0.0000
+/home/protomate/CleanSweepRL/agent.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  "tether_length": torch.FloatTensor([state_dict["tether_length"]])
+trash left:  1
+Episode 3/1000 - Reward: -172.00, Loss: 0.0000
+trash left:  0
+Episode 4/1000 - Reward: 108.20, Loss: 0.0000
+trash left:  0
+Episode 5/1000 - Reward: 127.90, Loss: 0.0000
+Evaluation reward: -195.00
+trash left:  1
+Episode 6/1000 - Reward: -187.00, Loss: 1.9476
+trash left:  1
+Episode 7/1000 - Reward: -209.00, Loss: 1.1150
+trash left:  1
+Episode 8/1000 - Reward: -217.00, Loss: 0.6506
+trash left:  1
+Episode 9/1000 - Reward: -199.00, Loss: 0.4552
+trash left:  1
+Episode 10/1000 - Reward: -172.00, Loss: 0.3244
+Evaluation reward: 139.80
+trash left:  1
+Episode 11/1000 - Reward: -197.00, Loss: 1.1024
+trash left:  0
+Episode 12/1000 - Reward: 111.10, Loss: 0.9154
+trash left:  1
+Episode 13/1000 - Reward: -205.00, Loss: 0.7946
+trash left:  1
+Episode 14/1000 - Reward: -201.00, Loss: 0.5751
+trash left:  0
+Episode 15/1000 - Reward: 130.40, Loss: 0.5738
+Evaluation reward: -179.00
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent.py", line 396, in <module>
+    reward, loss = agent.train_episode(env)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 293, in train_episode
+    loss = self.optimize_model()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 181, in optimize_model
+    [self._to_tensor(s)["grid"] for s in batch.next_state if s is not None]
+     ^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 142, in _to_tensor
+    "steps_remaining": torch.FloatTensor([state_dict["steps_remaining"]])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

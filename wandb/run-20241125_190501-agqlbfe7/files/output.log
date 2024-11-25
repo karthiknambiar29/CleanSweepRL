@@ -1,0 +1,40 @@
+/home/protomate/CleanSweepRL/agent.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  "tether_length": torch.FloatTensor([state_dict["tether_length"]])
+trash left:  1
+Episode 1/1000 - Reward: -142.00, Loss: 0.0000
+trash left:  2
+Episode 2/1000 - Reward: -186.00, Loss: 0.5033
+trash left:  0
+Episode 3/1000 - Reward: 158.30, Loss: 0.5138
+trash left:  0
+Episode 4/1000 - Reward: 141.20, Loss: 1.0284
+trash left:  1
+Episode 5/1000 - Reward: -164.00, Loss: 1.2489
+Evaluation reward: 172.80
+trash left:  2
+Episode 6/1000 - Reward: -207.00, Loss: 0.7273
+trash left:  1
+Episode 7/1000 - Reward: -163.00, Loss: 0.5881
+trash left:  1
+Episode 8/1000 - Reward: -156.00, Loss: 0.5152
+trash left:  2
+Episode 9/1000 - Reward: -212.00, Loss: 0.8335
+trash left:  1
+Episode 10/1000 - Reward: -175.00, Loss: 0.5050
+Evaluation reward: -200.00
+trash left:  1
+Episode 11/1000 - Reward: -166.00, Loss: 0.3195
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent.py", line 396, in <module>
+    reward, loss = agent.train_episode(env)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 293, in train_episode
+    loss = self.optimize_model()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 185, in optimize_model
+    self._to_tensor(s)["boat_positions"]
+    ^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 148, in _to_tensor
+    .to(self.device),
+     ^^^^^^^^^^^^^^^
+KeyboardInterrupt

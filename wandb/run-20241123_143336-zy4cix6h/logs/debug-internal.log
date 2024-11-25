@@ -1,0 +1,17 @@
+{"time":"2024-11-23T14:33:36.135830289+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T14:33:36.135842296+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_143336-zy4cix6h/logs/debug-core.log"}
+{"time":"2024-11-23T14:33:36.240126664+05:30","level":"INFO","msg":"created new stream","id":"zy4cix6h"}
+{"time":"2024-11-23T14:33:36.240187323+05:30","level":"INFO","msg":"stream: started","id":"zy4cix6h"}
+{"time":"2024-11-23T14:33:36.240425341+05:30","level":"INFO","msg":"sender: started","stream_id":"zy4cix6h"}
+{"time":"2024-11-23T14:33:36.240388259+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"zy4cix6h"}}
+{"time":"2024-11-23T14:33:36.240299016+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"zy4cix6h"}}
+{"time":"2024-11-23T14:33:36.842892431+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T14:40:18.210709657+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T14:40:18.21109572+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-23T14:40:19.211540292+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.37582295},{"desc":"uploading wandb-summary.json","runtime_seconds":0.334509049,"progress":"172B/172B"},{"desc":"uploading config.yaml","runtime_seconds":0.035476275,"progress":"976B/976B"},{"desc":"uploading output.log","runtime_seconds":0.03545685,"progress":"472B/472B"}],"total_operations":4}}
+{"time":"2024-11-23T14:40:19.856723011+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-23T14:40:21.228466779+05:30","level":"INFO","msg":"stream: closing","id":"zy4cix6h"}
+{"time":"2024-11-23T14:40:21.228474405+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"zy4cix6h"}}
+{"time":"2024-11-23T14:40:21.22848363+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"zy4cix6h"}}
+{"time":"2024-11-23T14:40:21.228511468+05:30","level":"INFO","msg":"sender: closed","stream_id":"zy4cix6h"}
+{"time":"2024-11-23T14:40:21.228513986+05:30","level":"INFO","msg":"stream: closed","id":"zy4cix6h"}

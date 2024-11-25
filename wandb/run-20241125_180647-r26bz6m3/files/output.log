@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent.py", line 384, in <module>
+    trash_left = env.trash_left  # Get trash left
+                 ^^^^^^^^^^^^^^
+AttributeError: 'TetheredBoatsEnv' object has no attribute 'trash_left'

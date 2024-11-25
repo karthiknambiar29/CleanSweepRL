@@ -1,0 +1,10 @@
+Training:   0%|                           | 0/1000 [00:00<?, ?it/s, ep_reward=716.0, steps=84, epsilon=0.900]
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/main.py", line 244, in <module>
+    main()
+  File "/home/protomate/CleanSweepRL/main.py", line 238, in main
+    train(args, random=False)
+  File "/home/protomate/CleanSweepRL/main.py", line 145, in train
+    agent.save_model(os.path.join(args.save_dir, "best_model.pth"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'TetheredBoatsAgent' object has no attribute 'save_model'

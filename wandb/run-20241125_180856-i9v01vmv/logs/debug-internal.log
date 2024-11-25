@@ -1,0 +1,11 @@
+{"time":"2024-11-25T18:08:56.514726855+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-25T18:08:56.514760425+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241125_180856-i9v01vmv/logs/debug-core.log"}
+{"time":"2024-11-25T18:08:56.619159995+05:30","level":"INFO","msg":"created new stream","id":"i9v01vmv"}
+{"time":"2024-11-25T18:08:56.619236374+05:30","level":"INFO","msg":"stream: started","id":"i9v01vmv"}
+{"time":"2024-11-25T18:08:56.61945258+05:30","level":"INFO","msg":"sender: started","stream_id":"i9v01vmv"}
+{"time":"2024-11-25T18:08:56.619364039+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"i9v01vmv"}}
+{"time":"2024-11-25T18:08:56.619527012+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"i9v01vmv"}}
+{"time":"2024-11-25T18:08:57.04548106+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T18:09:13.460085123+05:30","level":"INFO","msg":"stream: closing","id":"i9v01vmv"}
+{"time":"2024-11-25T18:09:13.460101115+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T18:09:13.460430816+05:30","level":"INFO","msg":"Stopped system monitor"}

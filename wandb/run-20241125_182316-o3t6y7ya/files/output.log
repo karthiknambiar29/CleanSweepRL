@@ -1,0 +1,22 @@
+Episode 1/1000 - Reward: -70.00, Loss: 0.0000
+/home/protomate/CleanSweepRL/agent.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  "tether_length": torch.FloatTensor([state_dict["tether_length"]])
+Episode 2/1000 - Reward: -90.00, Loss: 1.1200
+Episode 3/1000 - Reward: -80.00, Loss: 1.2079
+Episode 4/1000 - Reward: -50.00, Loss: 1.2296
+Episode 5/1000 - Reward: -60.00, Loss: 1.1883
+Evaluation reward: -150.00
+Episode 6/1000 - Reward: -90.00, Loss: 1.0623
+Episode 7/1000 - Reward: -80.00, Loss: 1.0592
+Episode 8/1000 - Reward: -100.00, Loss: 0.9643
+Episode 9/1000 - Reward: -50.00, Loss: 0.9520
+Episode 10/1000 - Reward: -80.00, Loss: 1.0572
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent.py", line 409, in <module>
+    eval_reward = agent.evaluate_episode(env)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/agent.py", line 339, in evaluate_episode
+    env.render()
+  File "/home/protomate/CleanSweepRL/env2.py", line 426, in render
+    self.screen.fill((255, 255, 255))
+pygame.error: display Surface quit

@@ -1,0 +1,11 @@
+{"time":"2024-11-23T14:44:44.182848754+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T14:44:44.182883291+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_144444-6f7ollsq/logs/debug-core.log"}
+{"time":"2024-11-23T14:44:44.288750367+05:30","level":"INFO","msg":"created new stream","id":"6f7ollsq"}
+{"time":"2024-11-23T14:44:44.288821606+05:30","level":"INFO","msg":"stream: started","id":"6f7ollsq"}
+{"time":"2024-11-23T14:44:44.289015993+05:30","level":"INFO","msg":"sender: started","stream_id":"6f7ollsq"}
+{"time":"2024-11-23T14:44:44.288946834+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6f7ollsq"}}
+{"time":"2024-11-23T14:44:44.289086198+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"6f7ollsq"}}
+{"time":"2024-11-23T14:44:44.744051486+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T14:54:41.73982555+05:30","level":"INFO","msg":"stream: closing","id":"6f7ollsq"}
+{"time":"2024-11-23T14:54:41.739838214+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T14:54:41.740187086+05:30","level":"INFO","msg":"Stopped system monitor"}

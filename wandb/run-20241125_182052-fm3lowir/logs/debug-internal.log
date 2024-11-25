@@ -1,0 +1,16 @@
+{"time":"2024-11-25T18:20:52.032008304+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-25T18:20:52.032025362+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241125_182052-fm3lowir/logs/debug-core.log"}
+{"time":"2024-11-25T18:20:52.137376136+05:30","level":"INFO","msg":"created new stream","id":"fm3lowir"}
+{"time":"2024-11-25T18:20:52.137458871+05:30","level":"INFO","msg":"stream: started","id":"fm3lowir"}
+{"time":"2024-11-25T18:20:52.137689573+05:30","level":"INFO","msg":"sender: started","stream_id":"fm3lowir"}
+{"time":"2024-11-25T18:20:52.137689905+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"fm3lowir"}}
+{"time":"2024-11-25T18:20:52.137587736+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fm3lowir"}}
+{"time":"2024-11-25T18:20:52.79199093+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T18:21:31.937733383+05:30","level":"INFO","msg":"stream: closing","id":"fm3lowir"}
+{"time":"2024-11-25T18:21:31.937745651+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T18:21:31.938026224+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-25T18:21:33.262144882+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-25T18:21:33.659541801+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"fm3lowir"}}
+{"time":"2024-11-25T18:21:33.659645715+05:30","level":"INFO","msg":"sender: closed","stream_id":"fm3lowir"}
+{"time":"2024-11-25T18:21:33.659645437+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"fm3lowir"}}
+{"time":"2024-11-25T18:21:33.659847636+05:30","level":"INFO","msg":"stream: closed","id":"fm3lowir"}

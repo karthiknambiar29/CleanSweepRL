@@ -1,0 +1,11 @@
+{"time":"2024-11-23T18:56:47.37532691+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T18:56:47.37533677+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_185647-1ekkuot3/logs/debug-core.log"}
+{"time":"2024-11-23T18:56:47.477938506+05:30","level":"INFO","msg":"created new stream","id":"1ekkuot3"}
+{"time":"2024-11-23T18:56:47.47796794+05:30","level":"INFO","msg":"stream: started","id":"1ekkuot3"}
+{"time":"2024-11-23T18:56:47.478057426+05:30","level":"INFO","msg":"sender: started","stream_id":"1ekkuot3"}
+{"time":"2024-11-23T18:56:47.478102674+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"1ekkuot3"}}
+{"time":"2024-11-23T18:56:47.478038086+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"1ekkuot3"}}
+{"time":"2024-11-23T18:56:47.927368482+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T18:57:26.971840021+05:30","level":"INFO","msg":"stream: closing","id":"1ekkuot3"}
+{"time":"2024-11-23T18:57:26.971895369+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T18:57:26.972836465+05:30","level":"INFO","msg":"Stopped system monitor"}

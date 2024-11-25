@@ -1,0 +1,11 @@
+{"time":"2024-11-23T19:45:14.133926373+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T19:45:14.133975535+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_194514-ez7je87m/logs/debug-core.log"}
+{"time":"2024-11-23T19:45:14.240221683+05:30","level":"INFO","msg":"created new stream","id":"ez7je87m"}
+{"time":"2024-11-23T19:45:14.240281796+05:30","level":"INFO","msg":"stream: started","id":"ez7je87m"}
+{"time":"2024-11-23T19:45:14.240492335+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"ez7je87m"}}
+{"time":"2024-11-23T19:45:14.240418476+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ez7je87m"}}
+{"time":"2024-11-23T19:45:14.240627708+05:30","level":"INFO","msg":"sender: started","stream_id":"ez7je87m"}
+{"time":"2024-11-23T19:45:14.707921312+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T19:45:23.396904736+05:30","level":"INFO","msg":"stream: closing","id":"ez7je87m"}
+{"time":"2024-11-23T19:45:23.396956663+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T19:45:23.397988736+05:30","level":"INFO","msg":"Stopped system monitor"}

@@ -1,0 +1,11 @@
+{"time":"2024-11-25T18:07:13.764126956+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-25T18:07:13.764153966+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241125_180713-w18bxmfv/logs/debug-core.log"}
+{"time":"2024-11-25T18:07:13.869115661+05:30","level":"INFO","msg":"created new stream","id":"w18bxmfv"}
+{"time":"2024-11-25T18:07:13.869173722+05:30","level":"INFO","msg":"stream: started","id":"w18bxmfv"}
+{"time":"2024-11-25T18:07:13.869319895+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"w18bxmfv"}}
+{"time":"2024-11-25T18:07:13.869238004+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"w18bxmfv"}}
+{"time":"2024-11-25T18:07:13.869441077+05:30","level":"INFO","msg":"sender: started","stream_id":"w18bxmfv"}
+{"time":"2024-11-25T18:07:14.352236361+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T18:07:17.192007257+05:30","level":"INFO","msg":"stream: closing","id":"w18bxmfv"}
+{"time":"2024-11-25T18:07:17.192078046+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T18:07:17.19280795+05:30","level":"INFO","msg":"Stopped system monitor"}

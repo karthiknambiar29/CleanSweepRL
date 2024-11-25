@@ -1,0 +1,11 @@
+{"time":"2024-11-23T19:38:18.890342608+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T19:38:18.890362476+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_193818-1mla4diw/logs/debug-core.log"}
+{"time":"2024-11-23T19:38:18.995106786+05:30","level":"INFO","msg":"created new stream","id":"1mla4diw"}
+{"time":"2024-11-23T19:38:18.995176214+05:30","level":"INFO","msg":"stream: started","id":"1mla4diw"}
+{"time":"2024-11-23T19:38:18.995386471+05:30","level":"INFO","msg":"sender: started","stream_id":"1mla4diw"}
+{"time":"2024-11-23T19:38:18.995236388+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"1mla4diw"}}
+{"time":"2024-11-23T19:38:18.995475854+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"1mla4diw"}}
+{"time":"2024-11-23T19:38:19.430912784+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T19:38:40.484314812+05:30","level":"INFO","msg":"stream: closing","id":"1mla4diw"}
+{"time":"2024-11-23T19:38:40.484371425+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T19:38:40.485723155+05:30","level":"INFO","msg":"Stopped system monitor"}

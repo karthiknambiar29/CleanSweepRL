@@ -1,0 +1,11 @@
+{"time":"2024-11-23T19:06:56.491740747+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T19:06:56.491764635+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_190656-b5ajk1bt/logs/debug-core.log"}
+{"time":"2024-11-23T19:06:56.59720055+05:30","level":"INFO","msg":"created new stream","id":"b5ajk1bt"}
+{"time":"2024-11-23T19:06:56.597282124+05:30","level":"INFO","msg":"stream: started","id":"b5ajk1bt"}
+{"time":"2024-11-23T19:06:56.59738292+05:30","level":"INFO","msg":"sender: started","stream_id":"b5ajk1bt"}
+{"time":"2024-11-23T19:06:56.5973823+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"b5ajk1bt"}}
+{"time":"2024-11-23T19:06:56.59741983+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"b5ajk1bt"}}
+{"time":"2024-11-23T19:06:57.089504015+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T19:13:20.616619015+05:30","level":"INFO","msg":"stream: closing","id":"b5ajk1bt"}
+{"time":"2024-11-23T19:13:20.616687586+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T19:13:20.617834083+05:30","level":"INFO","msg":"Stopped system monitor"}

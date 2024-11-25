@@ -1,0 +1,11 @@
+{"time":"2024-11-25T18:56:41.254589434+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-25T18:56:41.254609955+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241125_185641-1upr94vb/logs/debug-core.log"}
+{"time":"2024-11-25T18:56:41.358493022+05:30","level":"INFO","msg":"created new stream","id":"1upr94vb"}
+{"time":"2024-11-25T18:56:41.358563615+05:30","level":"INFO","msg":"stream: started","id":"1upr94vb"}
+{"time":"2024-11-25T18:56:41.358715126+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"1upr94vb"}}
+{"time":"2024-11-25T18:56:41.358873596+05:30","level":"INFO","msg":"sender: started","stream_id":"1upr94vb"}
+{"time":"2024-11-25T18:56:41.358780604+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"1upr94vb"}}
+{"time":"2024-11-25T18:56:41.796997454+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T18:58:37.147410255+05:30","level":"INFO","msg":"stream: closing","id":"1upr94vb"}
+{"time":"2024-11-25T18:58:37.147423934+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T18:58:37.147758232+05:30","level":"INFO","msg":"Stopped system monitor"}

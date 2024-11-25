@@ -1,0 +1,11 @@
+{"time":"2024-11-23T18:54:58.782651583+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T18:54:58.782658227+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_185458-xeumku2d/logs/debug-core.log"}
+{"time":"2024-11-23T18:54:58.885470156+05:30","level":"INFO","msg":"created new stream","id":"xeumku2d"}
+{"time":"2024-11-23T18:54:58.885536716+05:30","level":"INFO","msg":"stream: started","id":"xeumku2d"}
+{"time":"2024-11-23T18:54:58.885691265+05:30","level":"INFO","msg":"sender: started","stream_id":"xeumku2d"}
+{"time":"2024-11-23T18:54:58.885659674+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xeumku2d"}}
+{"time":"2024-11-23T18:54:58.885754421+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"xeumku2d"}}
+{"time":"2024-11-23T18:54:59.344572288+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T18:56:42.195955801+05:30","level":"INFO","msg":"stream: closing","id":"xeumku2d"}
+{"time":"2024-11-23T18:56:42.195974387+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T18:56:42.196425183+05:30","level":"INFO","msg":"Stopped system monitor"}

@@ -1,0 +1,16 @@
+{"time":"2024-11-25T16:59:53.233110767+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-25T16:59:53.233139763+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241125_165953-i7wb1lkx/logs/debug-core.log"}
+{"time":"2024-11-25T16:59:53.33903999+05:30","level":"INFO","msg":"created new stream","id":"i7wb1lkx"}
+{"time":"2024-11-25T16:59:53.339138323+05:30","level":"INFO","msg":"stream: started","id":"i7wb1lkx"}
+{"time":"2024-11-25T16:59:53.339220191+05:30","level":"INFO","msg":"sender: started","stream_id":"i7wb1lkx"}
+{"time":"2024-11-25T16:59:53.339196883+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"i7wb1lkx"}}
+{"time":"2024-11-25T16:59:53.339216803+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"i7wb1lkx"}}
+{"time":"2024-11-25T16:59:53.815388181+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-25T17:00:17.285158054+05:30","level":"INFO","msg":"stream: closing","id":"i7wb1lkx"}
+{"time":"2024-11-25T17:00:17.285221143+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-25T17:00:17.286463349+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-25T17:00:18.877783932+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-25T17:00:19.319017464+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"i7wb1lkx"}}
+{"time":"2024-11-25T17:00:19.319100919+05:30","level":"INFO","msg":"sender: closed","stream_id":"i7wb1lkx"}
+{"time":"2024-11-25T17:00:19.319097934+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"i7wb1lkx"}}
+{"time":"2024-11-25T17:00:19.319316405+05:30","level":"INFO","msg":"stream: closed","id":"i7wb1lkx"}

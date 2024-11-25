@@ -1,0 +1,8 @@
+{"time":"2024-11-25T18:09:28.92404388+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-25T18:09:28.924049718+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241125_180928-5t0m2l3q/logs/debug-core.log"}
+{"time":"2024-11-25T18:09:29.027515389+05:30","level":"INFO","msg":"created new stream","id":"5t0m2l3q"}
+{"time":"2024-11-25T18:09:29.027575707+05:30","level":"INFO","msg":"stream: started","id":"5t0m2l3q"}
+{"time":"2024-11-25T18:09:29.027921236+05:30","level":"INFO","msg":"sender: started","stream_id":"5t0m2l3q"}
+{"time":"2024-11-25T18:09:29.027733479+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"5t0m2l3q"}}
+{"time":"2024-11-25T18:09:29.027824809+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"5t0m2l3q"}}
+{"time":"2024-11-25T18:09:29.529657926+05:30","level":"INFO","msg":"Starting system monitor"}

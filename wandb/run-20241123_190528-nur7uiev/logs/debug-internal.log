@@ -1,0 +1,11 @@
+{"time":"2024-11-23T19:05:28.013878087+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T19:05:28.013908947+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_190528-nur7uiev/logs/debug-core.log"}
+{"time":"2024-11-23T19:05:28.119361676+05:30","level":"INFO","msg":"created new stream","id":"nur7uiev"}
+{"time":"2024-11-23T19:05:28.119422793+05:30","level":"INFO","msg":"stream: started","id":"nur7uiev"}
+{"time":"2024-11-23T19:05:28.119544867+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"nur7uiev"}}
+{"time":"2024-11-23T19:05:28.119635837+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"nur7uiev"}}
+{"time":"2024-11-23T19:05:28.119752197+05:30","level":"INFO","msg":"sender: started","stream_id":"nur7uiev"}
+{"time":"2024-11-23T19:05:28.596583254+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T19:05:49.68716749+05:30","level":"INFO","msg":"stream: closing","id":"nur7uiev"}
+{"time":"2024-11-23T19:05:49.687225855+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T19:05:49.68838761+05:30","level":"INFO","msg":"Stopped system monitor"}

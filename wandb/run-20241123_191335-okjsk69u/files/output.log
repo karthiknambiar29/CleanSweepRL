@@ -1,0 +1,42 @@
+Using cuda device
+/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Initial observation shape: (10, 10)
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Action taken: 78
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent3.py", line 160, in <module>
+    wrapped_env.render()
+  File "/home/protomate/CleanSweepRL/agent3.py", line 88, in render
+    return self.env.render(mode)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/CleanSweepRL/env.py", line 395, in render
+    self.clock.tick(10)  # 2 FPS to match original 0.5s pause
+    ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

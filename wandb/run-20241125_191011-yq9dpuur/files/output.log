@@ -1,0 +1,35 @@
+/home/protomate/CleanSweepRL/agent.py:139: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  "tether_length": torch.FloatTensor([state_dict["tether_length"]])
+trash left:  1
+Episode 1/1000 - Reward: 25.00, Loss: 0.0000
+trash left:  1
+Episode 2/1000 - Reward: 25.00, Loss: 0.2750
+trash left:  0
+Episode 3/1000 - Reward: 76.80, Loss: 0.3073
+trash left:  0
+Episode 4/1000 - Reward: 37.90, Loss: 0.4869
+trash left:  1
+Episode 5/1000 - Reward: 45.00, Loss: 0.4969
+Evaluation reward: -15.00
+trash left:  1
+Episode 6/1000 - Reward: 25.00, Loss: 0.3561
+trash left:  2
+Episode 7/1000 - Reward: -15.00, Loss: 0.1978
+trash left:  2
+Episode 8/1000 - Reward: -15.00, Loss: 0.1420
+trash left:  2
+Episode 9/1000 - Reward: -15.00, Loss: 0.3286
+trash left:  2
+Episode 10/1000 - Reward: -15.00, Loss: 0.3176
+Evaluation reward: 45.00
+trash left:  1
+Episode 11/1000 - Reward: 5.00, Loss: 0.2114
+trash left:  0
+Episode 12/1000 - Reward: 76.70, Loss: 0.2489
+trash left:  0
+Episode 13/1000 - Reward: 57.50, Loss: 0.3022
+trash left:  2
+Episode 14/1000 - Reward: -15.00, Loss: 0.3529
+trash left:  1
+Episode 15/1000 - Reward: 5.00, Loss: 0.3017
+Evaluation reward: 71.30

@@ -1,0 +1,86 @@
+Using cuda device
+/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+-----------------------------
+| time/              |      |
+|    fps             | 1125 |
+|    iterations      | 1    |
+|    time_elapsed    | 0    |
+|    total_timesteps | 1024 |
+-----------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 1113         |
+|    iterations           | 2            |
+|    time_elapsed         | 1            |
+|    total_timesteps      | 2048         |
+| train/                  |              |
+|    approx_kl            | 0.0008052058 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -4.39        |
+|    explained_variance   | -0.00149     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 6.96e+03     |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00503     |
+|    value_loss           | 1.45e+04     |
+------------------------------------------
+-------------------------------------------
+| rollout/                |               |
+|    ep_len_mean          | 2.95e+03      |
+|    ep_rew_mean          | -2.18e+04     |
+| time/                   |               |
+|    fps                  | 1164          |
+|    iterations           | 3             |
+|    time_elapsed         | 2             |
+|    total_timesteps      | 3072          |
+| train/                  |               |
+|    approx_kl            | 0.00089183176 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -4.39         |
+|    explained_variance   | 0.000385      |
+|    learning_rate        | 0.0003        |
+|    loss                 | 7.8e+03       |
+|    n_updates            | 20            |
+|    policy_gradient_loss | -0.00511      |
+|    value_loss           | 1.52e+04      |
+-------------------------------------------
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/agent3.py", line 145, in <module>
+    agent.train(total_timesteps=5000000)
+  File "/home/protomate/CleanSweepRL/agent3.py", line 116, in train
+    self.model.learn(total_timesteps=total_timesteps, callback=WandbCallback())
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/ppo/ppo.py", line 311, in learn
+    return super().learn(
+           ^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 323, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 202, in collect_rollouts
+    actions, values, log_probs = self.policy(obs_tensor)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/policies.py", line 654, in forward
+    distribution = self._get_action_dist_from_latent(latent_pi)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/policies.py", line 697, in _get_action_dist_from_latent
+    return self.action_dist.proba_distribution(action_logits=mean_actions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/stable_baselines3/common/distributions.py", line 288, in proba_distribution
+    self.distribution = Categorical(logits=action_logits)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/distributions/categorical.py", line 71, in __init__
+    super().__init__(batch_shape, validate_args=validate_args)
+  File "/home/protomate/.pyenv/versions/3.12.4/lib/python3.12/site-packages/torch/distributions/distribution.py", line 69, in __init__
+    if not valid.all():
+           ^^^^^^^^^^^
+KeyboardInterrupt

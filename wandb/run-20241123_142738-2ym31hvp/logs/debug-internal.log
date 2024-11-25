@@ -1,0 +1,17 @@
+{"time":"2024-11-23T14:27:38.632289563+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T14:27:38.632347304+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_142738-2ym31hvp/logs/debug-core.log"}
+{"time":"2024-11-23T14:27:38.738934703+05:30","level":"INFO","msg":"created new stream","id":"2ym31hvp"}
+{"time":"2024-11-23T14:27:38.739003752+05:30","level":"INFO","msg":"stream: started","id":"2ym31hvp"}
+{"time":"2024-11-23T14:27:38.739064841+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"2ym31hvp"}}
+{"time":"2024-11-23T14:27:38.739255043+05:30","level":"INFO","msg":"sender: started","stream_id":"2ym31hvp"}
+{"time":"2024-11-23T14:27:38.739156684+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"2ym31hvp"}}
+{"time":"2024-11-23T14:27:39.206532462+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T14:32:41.106566312+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T14:32:41.106921965+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-23T14:32:42.107330551+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.36038196},{"desc":"uploading wandb-summary.json","runtime_seconds":0.332809373,"progress":"174B/174B"},{"desc":"uploading config.yaml","runtime_seconds":0.009384887,"progress":"976B/976B"},{"desc":"uploading output.log","runtime_seconds":0.009367758,"progress":"472B/472B"}],"total_operations":4}}
+{"time":"2024-11-23T14:32:42.745431924+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-23T14:32:44.137777575+05:30","level":"INFO","msg":"stream: closing","id":"2ym31hvp"}
+{"time":"2024-11-23T14:32:44.137787135+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"2ym31hvp"}}
+{"time":"2024-11-23T14:32:44.137796868+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"2ym31hvp"}}
+{"time":"2024-11-23T14:32:44.137822682+05:30","level":"INFO","msg":"sender: closed","stream_id":"2ym31hvp"}
+{"time":"2024-11-23T14:32:44.137845619+05:30","level":"INFO","msg":"stream: closed","id":"2ym31hvp"}

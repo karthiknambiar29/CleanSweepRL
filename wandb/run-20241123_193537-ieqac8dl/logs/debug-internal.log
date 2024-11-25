@@ -1,0 +1,16 @@
+{"time":"2024-11-23T19:35:37.326869314+05:30","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-23T19:35:37.326889764+05:30","level":"INFO","msg":"created symlink","path":"/home/protomate/CleanSweepRL/wandb/run-20241123_193537-ieqac8dl/logs/debug-core.log"}
+{"time":"2024-11-23T19:35:37.430895859+05:30","level":"INFO","msg":"created new stream","id":"ieqac8dl"}
+{"time":"2024-11-23T19:35:37.430957995+05:30","level":"INFO","msg":"stream: started","id":"ieqac8dl"}
+{"time":"2024-11-23T19:35:37.431114848+05:30","level":"INFO","msg":"sender: started","stream_id":"ieqac8dl"}
+{"time":"2024-11-23T19:35:37.431225722+05:30","level":"INFO","msg":"handler: started","stream_id":{"value":"ieqac8dl"}}
+{"time":"2024-11-23T19:35:37.431086772+05:30","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ieqac8dl"}}
+{"time":"2024-11-23T19:35:37.897788815+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-23T19:35:49.371606885+05:30","level":"INFO","msg":"stream: closing","id":"ieqac8dl"}
+{"time":"2024-11-23T19:35:49.371757683+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-23T19:35:49.373284495+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-23T19:35:50.72185701+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-23T19:35:51.113904975+05:30","level":"INFO","msg":"handler: closed","stream_id":{"value":"ieqac8dl"}}
+{"time":"2024-11-23T19:35:51.114042198+05:30","level":"INFO","msg":"sender: closed","stream_id":"ieqac8dl"}
+{"time":"2024-11-23T19:35:51.114021483+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ieqac8dl"}}
+{"time":"2024-11-23T19:35:51.11420866+05:30","level":"INFO","msg":"stream: closed","id":"ieqac8dl"}

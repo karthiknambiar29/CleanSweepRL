@@ -1,0 +1,9 @@
+Training:  10%|████████████▌                                                                                                                 | 100/1000 [01:17<11:33,  1.30it/s, ep_reward=-1750.0, steps=200, epsilon=0.010]
+Traceback (most recent call last):
+  File "/home/protomate/CleanSweepRL/main.py", line 243, in <module>
+    main()
+  File "/home/protomate/CleanSweepRL/main.py", line 237, in main
+    train(args, random=True)
+  File "/home/protomate/CleanSweepRL/main.py", line 116, in train
+    time.sleep(0.1)
+KeyboardInterrupt
